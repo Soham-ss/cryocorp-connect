@@ -58,7 +58,7 @@ function downloadVCard() {
     'VERSION:3.0',
     'FN:CryoCorp O2 LLP',
     'ORG:CryoCorp O2 LLP',
-    'TITLE:Heavy Engineering & Cryogenic Solutions',
+    'TITLE:Breathing Life: Your Oxygen Plant Partner',
     'TEL;TYPE=WORK,VOICE:+917738069949',
     'TEL;TYPE=CELL,VOICE:+917710049939',
     'EMAIL;TYPE=WORK,INTERNET:crm@cryocorp.in',
@@ -97,11 +97,11 @@ function generateAndDownloadHighResQR(targetUrl) {
   ctx.fillStyle = '#ffffff';
   ctx.font = 'bold 44px "Outfit", sans-serif';
   ctx.textAlign = 'center';
-  ctx.fillText('CRYOCORP O₂ LLP', canvasSize / 2, 70);
+  ctx.fillText('CRYOCORP O2 LLP', canvasSize / 2, 70);
 
   ctx.fillStyle = '#38bdf8';
   ctx.font = '500 24px "Inter", sans-serif';
-  ctx.fillText('Heavy Engineering & Cryogenic Solutions', canvasSize / 2, 110);
+  ctx.fillText('Breathing Life: Your Oxygen Plant Partner', canvasSize / 2, 110);
 
   const tempDiv = document.createElement('div');
   tempDiv.style.display = 'none';
