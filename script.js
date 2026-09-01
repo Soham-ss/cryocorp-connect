@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 2. Exact Permanent Production URL for this Hub
   // When clients scan the printed QR code on a card/machine, they land on this Hub page!
-  const HUB_PRODUCTION_URL = 'https://cryocorp.in/connect';
+  const HUB_PRODUCTION_URL = 'https://cryocorp-connect.vercel.app';
 
   // Update badge on page
   const badgeEl = document.getElementById('qr-target-url');
@@ -63,7 +63,7 @@ function downloadVCard() {
     'TEL;TYPE=CELL,VOICE:+917710049939',
     'EMAIL;TYPE=WORK,INTERNET:crm@cryocorp.in',
     'URL:https://cryocorp.in/',
-    'URL;TYPE=Hub:https://cryocorp.in/connect',
+    'URL;TYPE=Hub:https://cryocorp-connect.vercel.app',
     'NOTE:Manufacturers of high-purity Oxygen/Nitrogen Plants, ASUs, and Cryogenic Spares.',
     'END:VCARD'
   ].join('\r\n');
