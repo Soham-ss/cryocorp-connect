@@ -28,7 +28,7 @@ function downloadVCard() {
     'ORG:CryoCorp O2 LLP;Executive Leadership',
     'TITLE:Dr. Jaya Goyal (Managing Partner) & Ashish Goyal (Managing Director)',
     'TEL;TYPE=WORK,VOICE,PREF:+919821219939',
-    'TEL;TYPE=WORK,VOICE:+917738069949',
+    'TEL;TYPE=WORK,VOICE:+919004759939',
     'TEL;TYPE=CELL,VOICE,WHATSAPP:+919821219939',
     'EMAIL;TYPE=WORK,INTERNET:crm@cryocorp.in',
     'URL:https://cryocorp.in/',
