@@ -1,10 +1,10 @@
 /* ==========================================================================
    CryoCorp O2 LLP - Clean Corporate Light Theme Stylesheet
    Color Palette derived directly from Logo:
-   - Mint Green (#5bb381 / #4aa370)
+   - Mint Green (#4fa876 / #5bb381)
    - Cyan/Teal (#30a2b2 / #48c1d2)
-   - Titanium Slate (#334155 / #475569 / #1e293b)
-   - Clean White & Fresh Ice Accents (#ffffff / #f4f8fa)
+   - Titanium Slate (#334155 / #475569 / #0f172a)
+   - Clean White & Light Surfaces (#ffffff / #f4f8fa)
    ========================================================================== */
 
 :root {
@@ -12,6 +12,7 @@
   --logo-teal-light: #e6f6f8;
   --logo-teal-border: #9ee0e8;
   --logo-teal-gradient: linear-gradient(135deg, #288f9e 0%, #46bfd0 100%);
+  --logo-teal-alt: linear-gradient(135deg, #1e707c 0%, #30a2b2 100%);
 
   --logo-mint: #4fa876;
   --logo-mint-light: #edf8f2;
@@ -67,7 +68,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 28px 16px 56px;
+  padding: 24px 16px 48px;
   position: relative;
   overflow-x: hidden;
   background: 
@@ -107,7 +108,7 @@ body {
   max-width: 480px;
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 20px;
 }
 
 /* 1. Header Section */
@@ -120,16 +121,16 @@ body {
 }
 
 .logo-wrapper {
-  width: 120px;
-  height: 120px;
-  border-radius: 28px;
+  width: 116px;
+  height: 116px;
+  border-radius: 26px;
   background: #ffffff;
   padding: 12px;
   box-shadow: 0 10px 30px rgba(48, 162, 178, 0.15), 0 0 0 1px rgba(226, 232, 240, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 .logo-wrapper:hover {
@@ -140,7 +141,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  border-radius: 14px;
+  border-radius: 12px;
 }
 
 .verified-badge {
@@ -152,10 +153,10 @@ body {
   border: 1px solid var(--logo-mint-border);
   font-size: 0.775rem;
   font-weight: 600;
-  letter-spacing: 0.3px;
-  padding: 6px 14px;
+  letter-spacing: 0.2px;
+  padding: 5px 14px;
   border-radius: var(--radius-full);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   box-shadow: 0 2px 6px rgba(91, 179, 129, 0.1);
 }
 .icon-verified {
@@ -170,17 +171,60 @@ body {
   font-weight: 800;
   letter-spacing: -0.5px;
   color: var(--text-primary);
-  margin-bottom: 6px;
+  margin-bottom: 12px;
+}
+
+/* Leadership Card */
+.leadership-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background: #ffffff;
+  border: 1px solid #dbeafe;
+  border-radius: var(--radius-md);
+  padding: 10px 18px;
+  box-shadow: 0 4px 14px rgba(48, 162, 178, 0.08);
+  margin-bottom: 12px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.leader-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.leader-name {
+  font-size: 0.925rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.leader-role {
+  font-size: 0.775rem;
+  font-weight: 600;
+  color: #30a2b2;
+  margin-top: 1px;
+}
+
+.leader-divider {
+  width: 1px;
+  height: 28px;
+  background: #cbd5e1;
 }
 
 .company-tagline {
-  font-size: 0.925rem;
-  line-height: 1.5;
+  font-size: 0.875rem;
+  line-height: 1.45;
   color: var(--text-secondary);
   max-width: 410px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
+/* Save Contact Button */
 .btn-save-contact {
   display: inline-flex;
   align-items: center;
@@ -216,7 +260,7 @@ body {
 .action-section {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 11px;
 }
 
 .section-label {
@@ -234,7 +278,7 @@ body {
   align-items: center;
   gap: 14px;
   width: 100%;
-  padding: 15px 18px;
+  padding: 14px 18px;
   border-radius: var(--radius-md);
   text-decoration: none;
   color: var(--text-primary);
@@ -320,6 +364,9 @@ body {
   color: #ffffff;
   box-shadow: 0 4px 12px rgba(48, 162, 178, 0.3);
 }
+.teal-alt-icon {
+  background: var(--logo-teal-alt);
+}
 
 .secondary-icon {
   background: linear-gradient(135deg, #475569 0%, #334155 100%);
@@ -351,95 +398,10 @@ body {
   box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
 }
 
-/* 4. QR Code Card */
-.qr-section {
-  width: 100%;
-}
-
-.qr-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
-  padding: 22px 18px;
-  text-align: center;
-  box-shadow: var(--shadow-sm);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.qr-header {
-  margin-bottom: 16px;
-}
-.qr-title {
-  font-family: var(--font-heading);
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 4px;
-}
-.qr-caption {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
-.qr-code-frame {
-  background: #ffffff;
-  padding: 14px;
-  border-radius: var(--radius-md);
-  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
-  border: 1px solid var(--border-subtle);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 12px;
-}
-
-.qrcode-wrapper img,
-.qrcode-wrapper canvas {
-  display: block;
-  margin: 0 auto;
-  border-radius: 4px;
-}
-
-.qr-url-badge {
-  font-family: monospace;
-  font-size: 0.825rem;
-  font-weight: 600;
-  color: #1e707c;
-  background: var(--logo-teal-light);
-  border: 1px solid var(--logo-teal-border);
-  padding: 5px 14px;
-  border-radius: var(--radius-full);
-  margin-bottom: 16px;
-}
-
-.btn-download-qr {
-  justify-content: center;
-  background: #ffffff;
-  border: 1px solid var(--border-subtle);
-  color: var(--text-primary);
-  font-size: 0.875rem;
-  font-weight: 600;
-  padding: 11px 18px;
-  border-radius: var(--radius-sm);
-  width: auto;
-  box-shadow: var(--shadow-sm);
-}
-.btn-download-qr:hover {
-  background: var(--logo-teal-light);
-  border-color: var(--logo-teal);
-  color: var(--logo-teal);
-}
-.btn-download-qr svg {
-  width: 16px;
-  height: 16px;
-}
-
-/* 5. Footer & Socials */
+/* Footer & Socials */
 .hub-footer {
   text-align: center;
-  padding: 12px 0 8px;
+  padding: 10px 0 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -506,12 +468,12 @@ body {
 
 @media (min-width: 640px) {
   body {
-    padding: 44px 20px 64px;
+    padding: 36px 20px 56px;
   }
   .company-title {
     font-size: 2.1rem;
   }
   .hub-container {
-    gap: 26px;
+    gap: 24px;
   }
 }
